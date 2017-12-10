@@ -4,6 +4,10 @@
 
   &--t-padding{padding-top:80px;}
 
+  &--gutters {
+      margin-right: -65px;
+    }
+
   &--gutters-larger {
     margin-right: -100px;
   }
@@ -24,7 +28,7 @@
     padding-right: 45px;
   }
 
-  &__b-margin-until-large {
+  &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
 
@@ -106,6 +110,5 @@
         float:none;
         display:flex;
       }
-    }
-
+}
 }
