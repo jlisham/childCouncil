@@ -5,6 +5,9 @@ var gulp = require('gulp'),
     svg2png=require('gulp-svg2png');
 
     var config={
+      shape:{
+        spacing:{padding:1}
+      },
       mode:{css:{
         variables:{
           altSVG:function(){
