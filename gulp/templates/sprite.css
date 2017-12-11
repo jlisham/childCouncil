@@ -1,7 +1,14 @@
+/*
+edit this file only from the Templates folder under gulp tasks
+*/
+
 {{#shapes}}
 {{#first}}
 .icon{
   background-image: url('/assets/images/sprites/{{{sprite}}}');
+}
+.no-svg .icon{
+  background-image: url('/assets/images/sprites/{{#altSVG}}{{{sprite}}}{{/altSVG}}');
 }
 {{/first}}
  .icon--{{base}}{
