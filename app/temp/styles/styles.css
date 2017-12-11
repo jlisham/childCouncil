@@ -1326,8 +1326,11 @@ padding-top:10px;
 .primary-nav a{
       background-color:transparent;
       font-size: 1rem;
-    padding: 12px 0
+      padding: 12px 0
   }
+.primary-nav a.is-currLink{
+  color:#fabb69;
+}
   }
 
 .site-footer{
