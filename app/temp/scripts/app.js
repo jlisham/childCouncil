@@ -11149,6 +11149,7 @@ var MobileMenu = function () {
     this.siteHdr = (0, _jquery2.default)('.site-header');
     this.menuIcon = (0, _jquery2.default)('.site-header__menu-icon');
     this.menuContent = (0, _jquery2.default)('.site-header__menu-content');
+    this.navLink = (0, _jquery2.default)('.navLink');
     this.events();
   }
 
@@ -11156,11 +11157,13 @@ var MobileMenu = function () {
     key: 'events',
     value: function events() {
       this.menuIcon.click(this.toggleMenu.bind(this));
+      this.navLink.click(this.toggleMenu.bind(this));
     }
   }, {
     key: 'toggleMenu',
     value: function toggleMenu() {
       this.menuContent.toggleClass('site-header__menu-content--visible');
+      this.navLink.toggleClass('site-header__menu-content--visible');
       this.siteHdr.toggleClass('site-header--expanded');
       this.menuIcon.toggleClass("site-header__menu-icon--close-x");
     }
