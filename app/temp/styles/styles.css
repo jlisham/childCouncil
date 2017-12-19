@@ -466,20 +466,21 @@ img {
 }
 
 a {
-  color: #d59541;
+  color: #F4A055;
 }
 
-.large-hero {
-  border-bottom: 10px solid #2f5572;
+.main {
+  padding-top:64px;
+  border-bottom: 10px solid #4896CA;
   position: relative;
 
 }
 
-.large-hero__image {
+.main__image {
     display: block;
   }
 
-.large-hero__text-content {
+.main__text-content {
     padding-top:88px;
     position: absolute;
     top: 50%;
@@ -492,14 +493,14 @@ a {
 
 @media (min-width: 800px) {
 
-.large-hero__text-content {
+.main__text-content {
     padding-top:60px;
   }
   }
 
-.large-hero__title {
+.main__title {
     font-weight: 300;
-    color: #2f5572;
+    color: #4896CA;
     margin: 0;
     font-size: 2.4rem;
 
@@ -507,15 +508,15 @@ a {
 
 @media (min-width: 530px) {
 
-.large-hero__title {
+.main__title {
       font-size: 4.8rem
 
   }
   }
 
-.large-hero__subtitle {
+.main__subtitle {
     font-weight: 300;
-    color: #2f5572;
+    color: #4896CA;
     font-size: 1.5rem;
     margin: 0;
 
@@ -523,13 +524,13 @@ a {
 
 @media (min-width: 530px) {
 
-.large-hero__subtitle {
+.main__subtitle {
       font-size: 2.9rem
 
   }
   }
 
-.large-hero__description {
+.main__description {
     color: #FFF;
     font-size: 1.1rem;
     font-weight: 100;
@@ -541,13 +542,13 @@ a {
 
 @media (min-width: 530px) {
 
-.large-hero__description {
+.main__description {
       font-size: 1.875rem
   }
   }
 
 .btn {
-  background-color: #2f5572;
+  background-color: #4896CA;
   color: #FFF;
   text-decoration: none;
   padding: .75rem 1.2rem;
@@ -556,7 +557,7 @@ a {
 }
 
 .btn--orange {
-    background-color: #d59541;
+    background-color: #F4A055;
   }
 
 .btn--large {
@@ -644,7 +645,7 @@ a {
   }
 
 .page-section--blue {
-    background-color: #2f5572;
+    background-color: #4896CA;
     color: #FFF;
   }
 
@@ -676,15 +677,15 @@ a {
 
 @media (min-width: 1010px) {
       .page-section--testimonials.lazyloaded{
-      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
-      background-size: cover;        
+      background: url("/assets/images/hdr.png") top center no-repeat;
+      background-size: cover;
       }
   }
 
 .headline {
   font-size: 1.9rem;
   font-weight: 300;
-  color: #2f5572;
+  color: #4896CA;
 }
 
 @media (min-width: 530px) {
@@ -699,7 +700,7 @@ a {
   }
 
 .headline--orange {
-    color: #d59541;
+    color: #F4A055;
   }
 
 .headline--small {
@@ -714,7 +715,7 @@ a {
   }
 
 .headline--narrow {
-    max-width: 500px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -866,7 +867,7 @@ a {
         display:flex;
       }
 
-.generic-content-container p {
+.generic-content-container p, .generic-content-container li{
     font-weight: 300;
     line-height: 1.65;
     margin: 0 0 1.8rem 0;
@@ -874,9 +875,19 @@ a {
 
 @media (min-width: 530px) {
 
-.generic-content-container p {
-      font-size: 1.125rem
+.generic-content-container p, .generic-content-container li{
+      font-size: 1.325rem
   }
+  }
+
+.generic-content-container li{line-height: 1.25;}
+
+@media (min-width: 530px) {
+
+.generic-content-container {
+      font-size: 1.325rem
+
+}
   }
 
 .generic-content-container p a {
@@ -891,7 +902,7 @@ a {
 }
 
 .section-title--blue{
-    color:#2f5572;
+    color:#4896CA;
   }
 
 .section-title--less-margin{
@@ -1002,7 +1013,7 @@ a {
   }
 
 .testimonial__title{
-    color:#2f5572;
+    color:#4896CA;
     text-align: center;
     font-size:1.5rem;
     font-weight:500;
@@ -1010,7 +1021,7 @@ a {
   }
 
 .testimonial__subtitle{
-    color:#d59541;
+    color:#F4A055;
     text-align: center;
     font-size:.9375rem;
     font-weight:400;
@@ -1022,83 +1033,41 @@ edit this file only from the Templates folder under gulp tasks
 */
 
 .icon{
-  background-image: url('/assets/images/sprites/sprite-69f19c2e.svg');
+  background-image: url('/assets/images/sprites/sprite-0116a9c2.svg');
 }
 
 .no-svg .icon{
-  background-image: url('/assets/images/sprites/sprite-69f19c2e.png');
+  background-image: url('/assets/images/sprites/sprite-0116a9c2.png');
 }
 
-.icon--clear-view-escapes{
-   width:142.4px;
-   height:59.53px;
-   background-position: 0 0;
- }
-
 .icon--comment{
-   width:64px;
-   height:64px;
-   background-position: 99.70443349753694% 0;
- }
-
-.icon--facebook{
-   width:21.23px;
-   height:42.01px;
-   background-position: 26.040607071652357% 45.795830448496034%;
- }
-
-.icon--fire{
-   width:56px;
-   height:64px;
-   background-position: 0 99.56481481481481%;
- }
-
-.icon--globe{
-   width:64px;
-   height:64px;
-   background-position: 27.586206896551722% 99.56481481481481%;
- }
-
-.icon--instagram{
-   width:42.01px;
-   height:42.01px;
-   background-position: 63.2917018534157% 49.234556504346486%;
+   width:66px;
+   height:66px;
+   background-position: 28.106508875739646% 96.04%;
  }
 
 .icon--mail{
-   width:64px;
-   height:48px;
-   background-position: 0 48.00806451612903%;
+   width:66px;
+   height:50px;
+   background-position: 99.71005917159763% 0;
  }
 
-.icon--rain{
-   width:64px;
-   height:64px;
-   background-position: 99.70443349753694% 59.25925925925926%;
+.icon--phone{
+   width:47.5px;
+   height:69.1px;
+   background-position: 0 99.1124871001032%;
+ }
+
+.icon--safe-child-council{
+   width:168.51px;
+   height:96.04px;
+   background-position: 0 0;
  }
 
 .icon--star{
-   width:64px;
-   height:64px;
-   background-position: 59.11330049261084% 99.56481481481481%;
- }
-
-.icon--twitter{
-   width:51.78px;
-   height:42.06px;
-   background-position: 94.04330452560171% 98.50700323226104%;
- }
-
-.icon--wifi{
-   width:60px;
-   height:64px;
-   background-position: 68.79227053140097% 0;
- }
-
-.icon--youtube{
-   width:34.75px;
-   height:42px;
-   background-position: 36.69752421959096% 45.792307692307695%;
+   width:66px;
+   height:66px;
+   background-position: 99.71005917159763% 50%;
  }
 
 .site-header{
@@ -1111,22 +1080,22 @@ edit this file only from the Templates folder under gulp tasks
 
 }
 
-.site-header--expanded{background-color: rgba(47,85,114, .55);}
+.site-header--expanded{background-color: rgba(72,150,202, .55);}
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .site-header{
     position:fixed;
-    background-color: rgba(47,85,114, .3)
+    background-color: rgba(72,150,202, .65)
 
 }
 
     .site-header--dark{
-      background-color: rgba(23, 51, 72, .85);
+      background-color: rgba(51, 122, 170, .85);
     }
   }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .site-header__btn-container{float:right
   }
@@ -1139,8 +1108,8 @@ edit this file only from the Templates folder under gulp tasks
     transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
     transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-    background-color: #2f5572;
-    padding:25px 36px;
+    background-color: #4896CA;
+    padding:7px 10px;
     left:50%;
     -webkit-transform:translateX(-50%) scale(.8);
             transform:translateX(-50%) scale(.8);
@@ -1148,7 +1117,7 @@ edit this file only from the Templates folder under gulp tasks
             transform-origin: 50% 0;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .site-header__logo{
       left:auto;
@@ -1184,7 +1153,7 @@ edit this file only from the Templates folder under gulp tasks
       left:0;
       width: 20px;
       height:3px;
-      background-color: white;
+      background-color: #F4A055;
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -1199,7 +1168,7 @@ edit this file only from the Templates folder under gulp tasks
       left:0;
       width: 20px;
       height:3px;
-      background-color: white;
+      background-color: #F4A055;
       -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out;
       -webkit-transform-origin: 0 50%;
@@ -1213,7 +1182,7 @@ edit this file only from the Templates folder under gulp tasks
       left:0;
       width: 20px;
       height:3px;
-      background-color: white;
+      background-color: #F4A055;
       -webkit-transform-origin: 0 100%;
               transform-origin: 0 100%;
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -1222,7 +1191,7 @@ edit this file only from the Templates folder under gulp tasks
       transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .site-header__menu-icon{
       display: none
@@ -1252,7 +1221,7 @@ edit this file only from the Templates folder under gulp tasks
     z-index:-10;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .site-header__menu-content{
       -webkit-transform:scale(1);
@@ -1275,14 +1244,14 @@ padding-top:10px;
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .primary-nav{padding-top:0
 
 }
   }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .primary-nav--pull-right{float:right
   }
@@ -1305,7 +1274,7 @@ padding-top:10px;
     display:inline-block;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .primary-nav li{
       padding-right:20px;
@@ -1327,14 +1296,14 @@ padding-top:10px;
 .primary-nav a{
     color:white;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
     display:block;
     padding: 5px 8px;
       font-size: .8rem;
-    background-color: rgba(47,85,114, .5);
+    background-color: rgba(72,150,202, .5);
   }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .primary-nav a{
       background-color:transparent;
@@ -1347,7 +1316,7 @@ padding-top:10px;
   }
 
 .site-footer{
-  background-color: #2f5572;
+  background-color: #4896CA;
   color:white;
   padding:.5rem 0;
   text-align: center;
@@ -1385,7 +1354,7 @@ padding-top:10px;
 
 .modal{
 position:fixed;
-  z-index: 500;
+  z-index: 5;
   background-color:rgba(255,255,255, .94);
   top:0;
   bottom:0;
@@ -1414,15 +1383,14 @@ position:fixed;
             transform: translateY(-50%);
   }
 
-.modal__desc{
-    text-align: center;
-    font-size: 1.3rem;
+.modal__desc, .modal li{
+    font-size: 1.1rem;
     font-weight: 300;
-    line-height: 1.65;
+    line-height: 1.55;
   }
 
 .modal__close{
-    color: #2f5572;
+    color: #4896CA;
     position: absolute;
     top:15px;
     font-size: 2rem;
@@ -1435,7 +1403,7 @@ position:fixed;
 
 .modal__close:hover{
       cursor:pointer;
-      color:#d59541;
+      color:#F4A055;
     }
 
 .social-icons{
@@ -1447,7 +1415,7 @@ position:fixed;
     position:relative;
     display: inline-block;
     margin: 0 5px 5px 5px;
-    background-color: #d59541;
+    background-color: #F4A055;
     width:33%;
     height:72px;
   }

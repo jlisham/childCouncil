@@ -7,7 +7,7 @@ class StickyHeader{
   constructor(){
     this.lazyImages=$('.lazyload');
     this.siteHdr=$('.site-header');
-    this.hdrTriggerEl=$('.large-hero__title');
+    this.hdrTriggerEl=$('#mission');
     this.createHdrWaypoint();
     this.PageSections=$('.page-section');
     this.hdrLinks=$('.primary-nav a');
@@ -51,7 +51,7 @@ class StickyHeader{
           that.hdrLinks.removeClass('is-currLink');
           $(matchingHeadLink).addClass("is-currLink");
         }
-        }, offset: "18%"
+        }
       });
       new Waypoint({
         element:currSec,
@@ -61,7 +61,7 @@ class StickyHeader{
           that.hdrLinks.removeClass('is-currLink');
           $(matchingHeadLink).addClass("is-currLink");
         }
-      }, offset: "-40%"
+      }
       });
     });
   }

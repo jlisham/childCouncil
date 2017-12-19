@@ -6,7 +6,7 @@
   }
 
   &--blue {
-    background-color: $mainBlue;
+    background-color: $primary;
     color: #FFF;
   }
   &--no-b-padding-until-medium{
@@ -25,8 +25,8 @@
     background-color: #e0e6ef;
     @mixin atLarge{
       &.lazyloaded{
-      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
-      background-size: cover;        
+      background: url("/assets/images/hdr.png") top center no-repeat;
+      background-size: cover;
       }
     }
   }

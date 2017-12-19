@@ -5,7 +5,7 @@
     position:relative;
     display: inline-block;
     margin: 0 5px 5px 5px;
-    background-color: $mainOrange;
+    background-color: $secondary;
     width:33%;
     height:72px;
     @mixin atSmall{

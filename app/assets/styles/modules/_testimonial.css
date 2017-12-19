@@ -23,7 +23,7 @@
   }
 
   &__title{
-    color:$mainBlue;
+    color:$primary;
     text-align: center;
     font-size:1.5rem;
     font-weight:500;
@@ -31,7 +31,7 @@
   }
 
   &__subtitle{
-    color:$mainOrange;
+    color:$secondary;
     text-align: center;
     font-size:.9375rem;
     font-weight:400;

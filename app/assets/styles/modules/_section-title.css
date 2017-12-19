@@ -3,7 +3,7 @@
   font-weight: 300;
   text-align: center;
   &--blue{
-    color:$mainBlue;
+    color:$primary;
   }
   &--less-margin{
     margin-bottom: 1.3rem;

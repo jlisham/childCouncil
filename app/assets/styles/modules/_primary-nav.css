@@ -1,8 +1,8 @@
 .primary-nav{
 padding-top:10px;
-@mixin atMedium{padding-top:0;}
+@mixin atLarge{padding-top:0;}
   &--pull-right{
-    @mixin atMedium{float:right;}
+    @mixin atLarge{float:right;}
   }
 
   ul{
@@ -14,7 +14,7 @@ padding-top:10px;
     list-style: none;
     padding-right:6px;
     display:inline-block;
-    @mixin atMedium{
+    @mixin atLarge{
       padding-right:20px;
       display:block;
       float:left;
@@ -27,12 +27,12 @@ padding-top:10px;
   a{
     color:white;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
     display:block;
     padding: 5px 8px;
       font-size: .8rem;
-    background-color: rgba($mainBlue, .5);
-    @mixin atMedium{
+    background-color: rgba($primary, .5);
+    @mixin atLarge{
       background-color:transparent;
       font-size: 1rem;
       padding: 12px 0;

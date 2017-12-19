@@ -4,32 +4,32 @@
   z-index: 2;
   transition: background-color .3s ease-out;
   width:100%;
-  &--expanded{background-color: rgba($mainBlue, .55);}
+  &--expanded{background-color: rgba($primary, .55);}
 
-  @mixin atMedium{
+  @mixin atLarge{
     position:fixed;
-    background-color: rgba($mainBlue, .3);
+    background-color: rgba($primary, .65);
 
     &--dark{
-      background-color: rgba(23, 51, 72, .85);
+      background-color: rgba(51, 122, 170, .85);
     }
 
   }
 
   &__btn-container{
-    @mixin atMedium{float:right;}
+    @mixin atLarge{float:right;}
   }
 
   &__logo{
     position: absolute;
     top:0;
     transition: transform .3s ease-out;
-    background-color: $mainBlue;
-    padding:25px 36px;
+    background-color: $primary;
+    padding:7px 10px;
     left:50%;
     transform:translateX(-50%) scale(.8);
     transform-origin: 50% 0;
-    @mixin atMedium{
+    @mixin atLarge{
       left:auto;
       transform: translateX(0);
 
@@ -59,7 +59,7 @@
       left:0;
       width: 20px;
       height:3px;
-      background-color: white;
+      background-color: $secondary;
       transform-origin: 0 0;
       transition: transform .3s ease-out;
     }
@@ -69,7 +69,7 @@
       left:0;
       width: 20px;
       height:3px;
-      background-color: white;
+      background-color: $secondary;
       transition: all .3s ease-out;
       transform-origin: 0 50%;
     }
@@ -80,12 +80,12 @@
       left:0;
       width: 20px;
       height:3px;
-      background-color: white;
+      background-color: $secondary;
       transform-origin: 0 100%;
       transition: transform .3s ease-out;
     }
 
-    @mixin atMedium{
+    @mixin atLarge{
       display: none;
     }
   }
@@ -108,7 +108,7 @@
     padding-top:90px;
     position: relative;
     z-index:-10;
-    @mixin atMedium{
+    @mixin atLarge{
       transform:scale(1);
       opacity:1;
       z-index: 1;

@@ -1,5 +1,6 @@
-.large-hero {
-  border-bottom: 10px solid $mainBlue;
+.main {
+  padding-top:64px;
+  border-bottom: 10px solid $primary;
   position: relative;
 
   &__image {
@@ -20,7 +21,7 @@
 
   &__title {
     font-weight: 300;
-    color: $mainBlue;
+    color: $primary;
     margin: 0;
     font-size: 2.4rem;
 
@@ -32,7 +33,7 @@
 
   &__subtitle {
     font-weight: 300;
-    color: $mainBlue;
+    color: $primary;
     font-size: 1.5rem;
     margin: 0;
 

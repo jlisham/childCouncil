@@ -11267,7 +11267,7 @@ var StickyHeader = function () {
 
     this.lazyImages = (0, _jquery2.default)('.lazyload');
     this.siteHdr = (0, _jquery2.default)('.site-header');
-    this.hdrTriggerEl = (0, _jquery2.default)('.large-hero__title');
+    this.hdrTriggerEl = (0, _jquery2.default)('#mission');
     this.createHdrWaypoint();
     this.PageSections = (0, _jquery2.default)('.page-section');
     this.hdrLinks = (0, _jquery2.default)('.primary-nav a');
@@ -11317,7 +11317,7 @@ var StickyHeader = function () {
               that.hdrLinks.removeClass('is-currLink');
               (0, _jquery2.default)(matchingHeadLink).addClass("is-currLink");
             }
-          }, offset: "18%"
+          }
         });
         new Waypoint({
           element: currSec,
@@ -11327,7 +11327,7 @@ var StickyHeader = function () {
               that.hdrLinks.removeClass('is-currLink');
               (0, _jquery2.default)(matchingHeadLink).addClass("is-currLink");
             }
-          }, offset: "-40%"
+          }
         });
       });
     }
