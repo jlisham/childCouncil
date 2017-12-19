@@ -11,6 +11,7 @@ padding-top:10px;
     @mixin clearfix;
   }
   li{
+
     list-style: none;
     padding-right:6px;
     display:inline-block;
@@ -29,6 +30,7 @@ padding-top:10px;
     text-decoration: none;
     font-weight: 400;
     display:block;
+    margin-bottom: 3px;
     padding: 5px 8px;
       font-size: 1rem;
     background-color: rgba($primary, .9);

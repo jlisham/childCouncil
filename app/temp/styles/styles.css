@@ -1077,19 +1077,15 @@ edit this file only from the Templates folder under gulp tasks
   -webkit-transition: background-color .3s ease-out;
   transition: background-color .3s ease-out;
   width:100%;
+  position:fixed;
+  max-height: 60px;
+  background-color: rgba(72,150,202, .65);
 
 }
 
 .site-header--expanded{background-color: rgba(72,150,202, .55);}
 
 @media (min-width: 530px) {
-
-.site-header{
-    position:fixed;
-    max-height: 60px;
-    background-color: rgba(72,150,202, .65)
-
-}
 
     .site-header--dark{
       background-color: rgba(51, 122, 170, .85);
@@ -1103,6 +1099,7 @@ edit this file only from the Templates folder under gulp tasks
   }
 
 .site-header__logo{
+    z-index: 10;
     position: absolute;
     top:0;
     -webkit-transition: -webkit-transform .3s ease-out;
@@ -1119,14 +1116,22 @@ edit this file only from the Templates folder under gulp tasks
       left:auto;
       -webkit-transform: translateX(0);
               transform: translateX(0);
-      -webkit-transform:scale(.70);
-              transform:scale(.70);
+        -webkit-transform:scale(.56);
+                transform:scale(.56);
   }
 
 .site-header--dark .site-header__logo{
         -webkit-transform:scale(.56);
                 transform:scale(.56);
     }
+
+@media (min-width: 530px) {
+
+.site-header__logo{
+        -webkit-transform:scale(.7);
+                transform:scale(.7)
+  }
+  }
 
 @media (min-width: 1010px) {
 
@@ -1215,6 +1220,7 @@ edit this file only from the Templates folder under gulp tasks
               transform:rotate(-45deg) scaleX(1.25) translateY(1px);}
 
 .site-header__menu-content{
+  background-color: rgba(255, 255, 255, .55);
     opacity:0;
     max-height: auto;
     -webkit-transform: scale(1.2);
@@ -1222,9 +1228,17 @@ edit this file only from the Templates folder under gulp tasks
     -webkit-transition:  all .3s ease-out;
     transition:  all .3s ease-out;
     text-align: center;
-    padding-top:20px;
+    margin-top:50px;
+    padding:10px;
     position: relative;
     z-index:-10;
+  }
+
+@media (min-width: 530px) {
+
+.site-header__menu-content{
+    padding-top:40px
+  }
   }
 
 @media (min-width: 1010px) {
@@ -1234,7 +1248,8 @@ edit this file only from the Templates folder under gulp tasks
               transform:scale(1);
       opacity:1;
       z-index: 1;
-      padding-top:0
+      padding:0;
+      margin-top:0
   }
   }
 
@@ -1275,6 +1290,7 @@ padding-top:10px;
   }
 
 .primary-nav li{
+
     list-style: none;
     padding-right:6px;
     display:inline-block;
@@ -1304,6 +1320,7 @@ padding-top:10px;
     text-decoration: none;
     font-weight: 400;
     display:block;
+    margin-bottom: 3px;
     padding: 5px 8px;
       font-size: 1rem;
     background-color: rgba(72,150,202, .9);
