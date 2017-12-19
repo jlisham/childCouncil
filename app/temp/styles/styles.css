@@ -1082,10 +1082,11 @@ edit this file only from the Templates folder under gulp tasks
 
 .site-header--expanded{background-color: rgba(72,150,202, .55);}
 
-@media (min-width: 1010px) {
+@media (min-width: 530px) {
 
 .site-header{
     position:fixed;
+    max-height: 60px;
     background-color: rgba(72,150,202, .65)
 
 }
@@ -1115,20 +1116,24 @@ edit this file only from the Templates folder under gulp tasks
             transform:translateX(-50%) scale(.8);
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
+      left:auto;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      -webkit-transform:scale(.70);
+              transform:scale(.70);
   }
+
+.site-header--dark .site-header__logo{
+        -webkit-transform:scale(.56);
+                transform:scale(.56);
+    }
 
 @media (min-width: 1010px) {
 
 .site-header__logo{
-      left:auto;
-      -webkit-transform: translateX(0);
-              transform: translateX(0)
+        -webkit-transform:scale(1);
+                transform:scale(1)
   }
-
-      .site-header--dark .site-header__logo{
-        -webkit-transform:scale(.56);
-                transform:scale(.56);
-      }
   }
 
 .site-header__logo__graphic{
@@ -1138,7 +1143,7 @@ edit this file only from the Templates folder under gulp tasks
 .site-header__menu-icon{
     width:20px;
     height: 19px;
-    position:absolute;
+    position:fixed;
     top:10px;
     right:10px;
     -webkit-transition: background-color .3s;
@@ -1211,12 +1216,13 @@ edit this file only from the Templates folder under gulp tasks
 
 .site-header__menu-content{
     opacity:0;
+    max-height: auto;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     -webkit-transition:  all .3s ease-out;
     transition:  all .3s ease-out;
     text-align: center;
-    padding-top:90px;
+    padding-top:20px;
     position: relative;
     z-index:-10;
   }
@@ -1299,15 +1305,14 @@ padding-top:10px;
     font-weight: 400;
     display:block;
     padding: 5px 8px;
-      font-size: .8rem;
-    background-color: rgba(72,150,202, .5);
+      font-size: 1rem;
+    background-color: rgba(72,150,202, .9);
   }
 
 @media (min-width: 1010px) {
 
 .primary-nav a{
       background-color:transparent;
-      font-size: 1rem;
       padding: 12px 0
   }
 .primary-nav a.is-currLink{

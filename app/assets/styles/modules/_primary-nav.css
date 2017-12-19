@@ -30,11 +30,10 @@ padding-top:10px;
     font-weight: 400;
     display:block;
     padding: 5px 8px;
-      font-size: .8rem;
-    background-color: rgba($primary, .5);
+      font-size: 1rem;
+    background-color: rgba($primary, .9);
     @mixin atLarge{
       background-color:transparent;
-      font-size: 1rem;
       padding: 12px 0;
 &.is-currLink{
   color:#fabb69;

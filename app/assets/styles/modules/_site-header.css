@@ -6,8 +6,9 @@
   width:100%;
   &--expanded{background-color: rgba($primary, .55);}
 
-  @mixin atLarge{
+  @mixin atSmall{
     position:fixed;
+    max-height: 60px;
     background-color: rgba($primary, .65);
 
     &--dark{
@@ -29,14 +30,15 @@
     left:50%;
     transform:translateX(-50%) scale(.8);
     transform-origin: 50% 0;
-    @mixin atLarge{
       left:auto;
       transform: translateX(0);
 
       .site-header--dark &{
         transform:scale(.56);
-      }
     }
+      transform:scale(.70);
+      @mixin atLarge{
+        transform:scale(1);}
   }
 
   &__logo__graphic{
@@ -46,7 +48,7 @@
   &__menu-icon{
     width:20px;
     height: 19px;
-    position:absolute;
+    position:fixed;
     top:10px;
     right:10px;
     transition: background-color .3s;
@@ -102,10 +104,11 @@
 
   &__menu-content{
     opacity:0;
+    max-height: auto;
     transform: scale(1.2);
     transition:  all .3s ease-out;
     text-align: center;
-    padding-top:90px;
+    padding-top:20px;
     position: relative;
     z-index:-10;
     @mixin atLarge{
