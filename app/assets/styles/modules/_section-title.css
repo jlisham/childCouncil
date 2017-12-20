@@ -5,6 +5,9 @@
   &--blue{
     color:$primary;
   }
+  &--orange{
+    color:$secondary;
+  }
   &--less-margin{
     margin-bottom: 1.3rem;
     margin-top:0;

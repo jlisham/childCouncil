@@ -905,6 +905,10 @@ a {
     color:#4896CA;
   }
 
+.section-title--orange{
+    color:#cc4200;
+  }
+
 .section-title--less-margin{
     margin-bottom: 1.3rem;
     margin-top:0;
@@ -1317,8 +1321,9 @@ padding-top:10px;
 
 .primary-nav a{
     color:white;
+    text-shadow: 1px 1px #4896CA;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 450;
     display:block;
     margin-bottom: 3px;
     padding: 5px 8px;
@@ -1329,6 +1334,7 @@ padding-top:10px;
 @media (min-width: 1010px) {
 
 .primary-nav a{
+      font-size:1.1rem;
       background-color:transparent;
       padding: 12px 0
   }

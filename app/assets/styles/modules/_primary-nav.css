@@ -27,14 +27,16 @@ padding-top:10px;
   }
   a{
     color:white;
+    text-shadow: 1px 1px $primary;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 450;
     display:block;
     margin-bottom: 3px;
     padding: 5px 8px;
       font-size: 1rem;
     background-color: rgba($primary, .9);
     @mixin atLarge{
+      font-size:1.1rem;
       background-color:transparent;
       padding: 12px 0;
 &.is-currLink{
