@@ -466,7 +466,7 @@ img {
 }
 
 a {
-  color: #F4A055;
+  color: #cc4200;
 }
 
 .main {
@@ -557,7 +557,7 @@ a {
 }
 
 .btn--orange {
-    background-color: #F4A055;
+    background-color: #cc4200;
   }
 
 .btn--large {
@@ -700,7 +700,7 @@ a {
   }
 
 .headline--orange {
-    color: #F4A055;
+    color: #cc4200;
   }
 
 .headline--small {
@@ -1021,7 +1021,7 @@ a {
   }
 
 .testimonial__subtitle{
-    color:#F4A055;
+    color:#cc4200;
     text-align: center;
     font-size:.9375rem;
     font-weight:400;
@@ -1107,7 +1107,7 @@ edit this file only from the Templates folder under gulp tasks
     transition: transform .3s ease-out;
     transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     background-color: #4896CA;
-    padding:7px 10px;
+    padding:6px 10px;
     left:50%;
     -webkit-transform:translateX(-50%) scale(.8);
             transform:translateX(-50%) scale(.8);
@@ -1163,7 +1163,7 @@ edit this file only from the Templates folder under gulp tasks
       left:0;
       width: 20px;
       height:3px;
-      background-color: #F4A055;
+      background-color: #cc4200;
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -1178,7 +1178,7 @@ edit this file only from the Templates folder under gulp tasks
       left:0;
       width: 20px;
       height:3px;
-      background-color: #F4A055;
+      background-color: #cc4200;
       -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out;
       -webkit-transform-origin: 0 50%;
@@ -1192,7 +1192,7 @@ edit this file only from the Templates folder under gulp tasks
       left:0;
       width: 20px;
       height:3px;
-      background-color: #F4A055;
+      background-color: #cc4200;
       -webkit-transform-origin: 0 100%;
               transform-origin: 0 100%;
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -1333,7 +1333,7 @@ padding-top:10px;
       padding: 12px 0
   }
 .primary-nav a.is-currLink{
-  color:#fabb69;
+  /*color:$secondary;*/
 }
   }
 
@@ -1425,7 +1425,7 @@ position:fixed;
 
 .modal__close:hover{
       cursor:pointer;
-      color:#F4A055;
+      color:#cc4200;
     }
 
 .social-icons{
@@ -1437,7 +1437,7 @@ position:fixed;
     position:relative;
     display: inline-block;
     margin: 0 5px 5px 5px;
-    background-color: #F4A055;
+    background-color: #cc4200;
     width:33%;
     height:72px;
   }
