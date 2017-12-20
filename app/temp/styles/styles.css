@@ -950,93 +950,6 @@ a {
   }
   }
 
-.feature-item {
-  position: relative;
-  padding-bottom: 2.5rem;
-}
-
-@media (min-width: 530px) {
-
-.feature-item {
-    padding-left: 94px
-}
-  }
-
-.feature-item__icon {
-    display: block;
-    margin: 0 auto;
-  }
-
-@media (min-width: 530px) {
-
-.feature-item__icon {
-      position: absolute;
-      left: 0
-  }
-  }
-
-.feature-item__title {
-    font-size: 1.6rem;
-    font-weight: 300;
-    margin-top: .7em;
-    margin-bottom: .8rem;
-    text-align: center;
-  }
-
-@media (min-width: 530px) {
-
-.feature-item__title {
-      text-align: left;
-      margin-top: 1em;
-      font-size: 1.875rem
-  }
-  }
-
-.testimonial{
-  background-color: rgba(255, 255, 255, .8);
-  padding:0 18px 0 18px;
-  margin-bottom:98px;
-}
-
-@media (min-width: 1010px) {
-
-.testimonial{
-  padding:0 1.8125rem 1px 1.8125rem;
-  margin-bottom:0px
-}
-  }
-
-.testimonial--last{
-    margin-bottom:0;
-  }
-
-.testimonial__photo{
-    border-radius: 80px;
-    overflow: hidden;
-    width:160px;
-    height: 160px;
-    margin: 0 auto -80px auto;
-    position:relative;
-    top:-80px;
-    border:6px solid rgba(255, 255, 255, .8);
-  }
-
-.testimonial__title{
-    color:#4896CA;
-    text-align: center;
-    font-size:1.5rem;
-    font-weight:500;
-    margin:0;
-  }
-
-.testimonial__subtitle{
-    color:#cc4200;
-    text-align: center;
-    font-size:.9375rem;
-    font-weight:400;
-    margin:.25rem 0 1rem 0;
-  }
-
 /*
 edit this file only from the Templates folder under gulp tasks
 */
@@ -1155,7 +1068,7 @@ edit this file only from the Templates folder under gulp tasks
   }
 
 .site-header__menu-icon{
-    border: none 0px transparent;
+    border: none 0px ;
     background-color: transparent;
     width:20px;
     height: 19px;
@@ -1444,32 +1357,7 @@ position:fixed;
       color:#cc4200;
     }
 
-.social-icons{
-  text-align: center;
-
-}
-
-.social-icons__icon{
-    position:relative;
-    display: inline-block;
-    margin: 0 5px 5px 5px;
-    background-color: #cc4200;
-    width:33%;
-    height:72px;
-  }
-
-@media (min-width: 530px) {
-
-.social-icons__icon{
-      width:72px
-  }
-  }
-
-.social-icons__icon .icon{
-      display: block;
-      position: absolute;
-      top:50%;
-      left:50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-    }
+/*
+@import "modules/_testimonial";
+@import "modules/_social-icons";
+@import "modules/_feature-item";*/

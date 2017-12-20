@@ -49,7 +49,7 @@
   }
 
   &__menu-icon{
-    border: none 0px transparent;
+    border: none 0px ;
     background-color: transparent;
     width:20px;
     height: 19px;
