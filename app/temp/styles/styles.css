@@ -455,6 +455,8 @@ body {
   color: #333;
 }
 
+a{text-decoration: none;}
+
 img {
   max-width: 100%;
   height: auto;
@@ -555,6 +557,9 @@ a {
   display: inline-block;
 
 }
+
+.btn button{
+    border: none 0px transparent;}
 
 .btn--orange {
     background-color: #cc4200;
@@ -1150,6 +1155,8 @@ edit this file only from the Templates folder under gulp tasks
   }
 
 .site-header__menu-icon{
+    border: none 0px transparent;
+    background-color: transparent;
     width:20px;
     height: 19px;
     position:fixed;
@@ -1418,6 +1425,8 @@ position:fixed;
   }
 
 .modal__close{
+    border: none 0px transparent;
+    background-color: transparent;              
     color: #4896CA;
     position: absolute;
     top:15px;

@@ -11733,6 +11733,7 @@ var Modal = function () {
   function Modal() {
     _classCallCheck(this, Modal);
 
+    this.lastFocus = document.activeElement;
     this.openModalBtn = (0, _jquery2.default)('.open-modal');
     this.modal = (0, _jquery2.default)('.modal');
     this.closeModalBtn = (0, _jquery2.default)('.modal__close');
@@ -11767,6 +11768,7 @@ var Modal = function () {
     value: function closeModal() {
 
       this.modal.removeClass('modal--visible');
+      this.lastFocus.focus();
     }
   }]);
 

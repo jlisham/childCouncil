@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 class Modal{
   constructor(){
+    this.lastFocus=document.activeElement;
     this.openModalBtn=$('.open-modal');
     this.modal=$('.modal');
     this.closeModalBtn=$('.modal__close');
@@ -32,6 +33,7 @@ class Modal{
   closeModal(){
 
     this.modal.removeClass('modal--visible');
+    this.lastFocus.focus();
 
   }
 

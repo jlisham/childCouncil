@@ -49,6 +49,8 @@
   }
 
   &__menu-icon{
+    border: none 0px transparent;
+    background-color: transparent;
     width:20px;
     height: 19px;
     position:fixed;

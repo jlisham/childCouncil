@@ -31,6 +31,8 @@ position:fixed;
   }
 
   &__close{
+    border: none 0px transparent;
+    background-color: transparent;              
     color: $primary;
     position: absolute;
     top:15px;

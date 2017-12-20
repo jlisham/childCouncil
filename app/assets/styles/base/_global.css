@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #333;
 }
+a{text-decoration: none;}
 
 img {
   max-width: 100%;
