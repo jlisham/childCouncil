@@ -71,6 +71,7 @@
       transition: transform .3s ease-out;
     }
     &__img{
+      text-indent:-9999px;
       position: absolute;
       top:8px;
       left:0;

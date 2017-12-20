@@ -1184,6 +1184,7 @@ edit this file only from the Templates folder under gulp tasks
     }
 
 .site-header__menu-icon__img{
+      text-indent:-9999px;
       position: absolute;
       top:8px;
       left:0;
