@@ -1188,11 +1188,13 @@ edit this file only from the Templates folder under gulp tasks
 .primary-nav{
 padding-top:10px;
 
+
 }
 
 @media (min-width: 1010px) {
 
 .primary-nav{padding-top:0
+
 
 }
   }
@@ -1263,6 +1265,8 @@ padding-top:10px;
   /*color:$secondary;*/
 }
   }
+
+.primary-nav a:hover{color:#cc4200;}
 
 .site-footer{
   background-color: #4896CA;

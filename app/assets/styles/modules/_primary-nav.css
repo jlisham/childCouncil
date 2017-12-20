@@ -43,6 +43,8 @@ padding-top:10px;
   /*color:$secondary;*/
 }
     }
+    &:hover{color:$secondary;}
   }
+
 
 }
