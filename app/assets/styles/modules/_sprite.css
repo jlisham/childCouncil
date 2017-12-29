@@ -3,25 +3,30 @@ edit this file only from the Templates folder under gulp tasks
 */
 
 .icon{
-  background-image: url('../../assets/images/sprites/sprite-0116a9c2.svg');
+  background-image: url('../../assets/images/sprites/sprite-00956383.svg');
 }
 .no-svg .icon{
-  background-image: url('../../assets/images/sprites/sprite-0116a9c2.png');
+  background-image: url('../../assets/images/sprites/sprite-00956383.png');
 }
  .icon--comment{
    width:66px;
    height:66px;
-   background-position: 28.106508875739646% 96.04%;
+   background-position: 99.71005917159763% 0;
+ }
+ .icon--exLink{
+   width:66.11px;
+   height:66.11px;
+   background-position: 28.12481496832258% 57.89378503827838%;
  }
  .icon--mail{
    width:66px;
    height:50px;
-   background-position: 99.71005917159763% 0;
+   background-position: 99.71005917159763% 36.26373626373626%;
  }
  .icon--phone{
    width:47.5px;
    height:69.1px;
-   background-position: 0 99.1124871001032%;
+   background-position: 0 58.956414978514424%;
  }
  .icon--safe-child-council{
    width:168.51px;
@@ -31,5 +36,5 @@ edit this file only from the Templates folder under gulp tasks
  .icon--star{
    width:66px;
    height:66px;
-   background-position: 99.71005917159763% 50%;
+   background-position: 0 99.48192771084338%;
  }
