@@ -708,6 +708,22 @@ a {
     color: #cc4200;
   }
 
+.headline--vertCentered {
+    position:relative;
+    top:auto;
+    -webkit-transform:translateY(0%);
+            transform:translateY(0%);
+  }
+
+@media (min-width: 1010px) {
+
+.headline--vertCentered {
+  top: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%)
+  }
+  }
+
 .headline--small {
     font-size: 1.2rem;
   }
@@ -1261,12 +1277,15 @@ padding-top:10px;
       background-color:transparent;
       padding: 12px 0
   }
-.primary-nav a.is-currLink{
-  /*color:$secondary;*/
-}
+      .primary-nav a.is-currLink{
+        /*color:$secondary;*/
+      }
   }
 
-.primary-nav a:hover{color:#cc4200;}
+.primary-nav a span{display:inline-block;color:white;-webkit-transform:rotate(135deg);transform:rotate(135deg);}
+
+.primary-nav a:hover{
+    text-shadow: .5px .5px #cc4200;}
 
 .site-footer{
   background-color: #4896CA;
