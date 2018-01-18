@@ -13,6 +13,7 @@
 <!--build:js assets/scripts/vendor.js -->
   <script src="/temp/scripts/vendor.js"></script>
 <!--endbuild-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
 
 
 </head>
@@ -76,7 +77,7 @@
     <div class='row--gutters'>
       <div class="row__medium-4"><img src="assets/images/671260158.jpg"></div>
       <div class="row__medium-8">
-            <h1 class="headline headline--no-t-margin">About Safe Child Council</h2>
+            <h1 class="headline headline--no-t-margin">About Safe Child Council</h1>
             <h2 class='headline--normal'>2017 Officers</h2>
             <ul class='generic-content-container'><li><span class='headline--orange'>Chair:</span> Mary Massman, Sherburne County Community Corrections
             </li><li><span class='headline--orange'>Co-Chair:</span> Jodi Heurung, Sherburne County Health & Human Services</li><li><span class='headline--orange'>Treasurer:</span> Deb Terlinden-Big Lake Schools</li><li><span class='headline--orange'>Secretary:</span> Sherry Schwartzkopf, Community Member</li></ul>
@@ -92,10 +93,10 @@
 
     <h1 class="headline headline--no-t-margin">
       Join the Safe Child Council</h1>
-      <div class="generic-content-container"><p>
-        Information about joining the council.
-</p>
-    </div>
+        <div class='join'>
+        <div>placeholder</div>
+        <div> <table id='eventTable'><caption>SCC Training Schedule</caption><tr><th>date</th><th>location</th></tr></table></div>
+        </div>
   </div>
 </div>
 
@@ -108,11 +109,10 @@
 <div class='modal__inner'>
   <h2 class='section-title section-title--orange section-title--less-margin'>
       <span class="icon icon--comment section-title__icon"></span>
-    Make a Report</strong></h2>
+    Make a Report</h2>
     <div class="wrapper wrapper--narrow">
     <p class='modal__desc'><ul><li><strong>Immediate danger:</strong><br> Contact your local law enforcement agency.<br>Sherburne County Sheriff's Office 763-765-3500.
 </li><li><strong>No immediate danger:</strong><br> Contact Sherburne County Health & Human Services at 763-765-4000. </li></ul>
-</p>
   </div>
 </div>
     <button type='button' class='modal__close' value='X'>X</button>
@@ -121,5 +121,6 @@
     <!--build:js assets/scripts/app.js -->
   <script src="temp/scripts/app.js"></script>
   <!--endbuild-->
+  <script src="assets/scripts/calendar.js"></script>
 </body>
 </html>

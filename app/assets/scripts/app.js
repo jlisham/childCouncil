@@ -3,6 +3,7 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
+import Calendar from './modules/Calendar';
 
 var mobileMenu=new MobileMenu();
 var stickyHeader=new StickyHeader();

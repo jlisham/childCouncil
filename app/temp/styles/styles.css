@@ -471,6 +471,35 @@ a {
   color: #cc4200;
 }
 
+table{
+  border-collapse:collapse;
+}
+
+table caption {
+        font-size: 150%;
+    }
+
+table tr{
+      border-bottom:dotted 1px #666;
+    }
+
+table tr:nth-child(odd){
+      background-color: rgba(72,150,202,0.3);
+    }
+
+table tr th{
+      color:white;
+      background-color: rgba(72,150,202,0.7);
+      font-style:italic;
+      text-transform:uppercase;
+      font-size:70%;
+      text-align:left;
+    }
+
+table tr th, table table tr td{
+      padding:.5em .5em .25em .5em;
+    }
+
 .main {
   padding-top:64px;
   border-bottom: 10px solid #4896CA;
@@ -1390,7 +1419,34 @@ position:fixed;
       color:#cc4200;
     }
 
+.join{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+}
+
+@media (min-width: 530px) {
+
+.join{
+/*        flex-direction: column;*/
+}
+  }
+
+.join div{
+    -webkit-box-flex:50%;
+        -ms-flex:50%;
+            flex:50%;
+    }
+
 /*
-@import "modules/_testimonial";
 @import "modules/_social-icons";
 @import "modules/_feature-item";*/

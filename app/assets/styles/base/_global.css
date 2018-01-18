@@ -16,3 +16,26 @@ img {
 a {
   color: $secondary;
 }
+table{
+  border-collapse:collapse;
+    caption {
+        font-size: 150%;
+    }
+    tr{
+      border-bottom:dotted 1px #666;
+    }
+    tr:nth-child(odd){
+      background-color:rgba($primary,0.3);
+    }
+    tr th{
+      color:white;
+      background-color:rgba($primary,0.7);
+      font-style:italic;
+      text-transform:uppercase;
+      font-size:70%;
+      text-align:left;
+    }
+    tr th, table tr td{
+      padding:.5em .5em .25em .5em;
+    }
+}
