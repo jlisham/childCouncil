@@ -11800,17 +11800,24 @@ for (var i = 0; i < arr.length; i++) {
 
 function createCalTable(d, l) {
   var today = moment().format().slice(0, 10);
+  var cnt = 0;
   var tbl = document.getElementById('eventTable');
   d.forEach(function (val, key) {
     if (val > today) {
-      var row = tbl.insertRow(key);
+      if (cnt === 0) {
+        document.getElementById('noEv').style.display = 'none';
+      }
+      cnt++;
+      var row = tbl.insertRow(key + 1);
       var d1 = row.insertCell(0);
       d1.align = 'center';
       var d2 = row.insertCell(1);
-      d1.innerHTML = l[key] != 'No Meeting' ? moment(val).format('dddd, MMM Do') : '<em>' + moment(val).format('MMMM') + '</em>';
+      d1.innerHTML = l[key] != 'No Meeting' ? moment(val).format('ddd, MMM Do, YYYY') : '<em>' + moment(val).format('MMMM, YYYY') + '</em>';
       d2.innerHTML = l[key];
     }
   });
+  var minHt = 140 + cnt * 32 + 'px';
+  document.getElementById('sched').style.minHeight = minHt;
 }
 
 createCalTable(arr, loc);

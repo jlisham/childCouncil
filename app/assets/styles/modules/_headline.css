@@ -1,7 +1,10 @@
 .headline {
+    color: #666; 
   font-size: 1.9rem;
   font-weight: 300;
+  &--blue{
   color: $primary;
+    }
 
   @mixin atSmall {
     font-size: 2.875rem;
@@ -12,7 +15,7 @@
   }
 
   &--orange {
-    color: $secondary;
+    color: $secondary;     
   }
 
   &--vertCentered {
@@ -25,7 +28,7 @@
   }
 
   &--small {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     @mixin atSmall {
       font-size: 1.875rem;
     }
