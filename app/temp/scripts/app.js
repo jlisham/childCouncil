@@ -11788,7 +11788,9 @@ exports.default = Modal;
 "use strict";
 
 
-var arr = ["2018-04-18", "2018-05-24", "2018-06-28", "2018-07-01", "2018-08-23", "2018-09-27", "2018-10-17", "2018-11-15", "2018-12-20"];
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var arr = ["2018-01-15", "2018-02-15", "2018-03-15", "2018-04-15", "2018-05-15", "2018-06-15", "2018-07-15", "2018-08-15", "2018-09-15", "2018-10-15", "2018-11-15", "2018-12-15", "2019-01-15", "2019-02-15", "2019-03-15", "2019-04-15", "2019-05-15", "2019-06-15", "2019-07-15", "2019-08-15", "2019-09-15", "2019-10-15", "2019-11-15", "2019-12-15"];
 var today = new Date().toISOString().slice(0, 10);
 var loc = [];
 loc[6] = "No Meeting";
@@ -11796,33 +11798,57 @@ loc[9] = "Offsite";
 var upcoming = arr.filter(function (dt) {
   return dt > today;
 });
-for (var i = 0; i < upcoming.length; i++) {
-  loc[i] = loc[i] === undefined ? "Meeting Room" : loc[i];
-}
 
-function createCalTable(d, l) {
-  var today = moment().format().slice(0, 10);
-  var cnt = 0;
+function createCalTable() {
+  var row = void 0,
+      d1 = void 0,
+      d2 = void 0;
   var tbl = document.getElementById("eventTable");
-  d.forEach(function (val, key) {
-    if (val > today) {
-      if (cnt === 0) {
-        document.getElementById("noEv").style.display = "none";
-      }
-      cnt++;
-      var row = tbl.insertRow(key + 1);
-      var d1 = row.insertCell(0);
-      d1.align = "center";
-      var d2 = row.insertCell(1);
-      d1.innerHTML = l[key] != "No Meeting" ? moment(val).format("ddd, MMM Do, YYYY") : "<em>" + moment(val).format("MMMM, YYYY") + "</em>";
-      d2.innerHTML = l[key];
-    }
-  });
-  var minHt = 140 + cnt * 32 + "px";
-  document.getElementById("sched").style.minHeight = minHt;
-}
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
 
-createCalTable(upcoming, loc);
+  try {
+    for (var _iterator = upcoming.entries()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var _ref = _step.value;
+
+      var _ref2 = _slicedToArray(_ref, 2);
+
+      var key = _ref2[0];
+      var val = _ref2[1];
+
+      if (key > 11) {
+        break;
+      }
+      loc[key] = loc[key] === undefined ? "Meeting Room" : loc[key];
+      row = tbl.insertRow(key + 1);
+      d1 = row.insertCell(0);
+      d2 = row.insertCell(1);
+      d1.align = "center";
+      d1.innerHTML = loc[key] != "No Meeting" ? moment(val).format("ddd, MMM Do, YYYY") : "<em>" + moment(val).format("MMMM, YYYY") + "</em>";
+      d2.innerHTML = loc[key];
+      var minHt = 140 * 32 + "px";
+      document.getElementById("sched").style.minHeight = minHt;
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+}
+if (upcoming.length > 0) {
+  document.getElementById("noEv").style.display = "none";
+  createCalTable();
+}
 
 /***/ })
 /******/ ]);

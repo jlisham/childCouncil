@@ -1,13 +1,28 @@
 const arr = [
-  "2018-04-18",
-  "2018-05-24",
-  "2018-06-28",
-  "2018-07-01",
-  "2018-08-23",
-  "2018-09-27",
-  "2018-10-17",
+  "2018-01-15",
+  "2018-02-15",
+  "2018-03-15",
+  "2018-04-15",
+  "2018-05-15",
+  "2018-06-15",
+  "2018-07-15",
+  "2018-08-15",
+  "2018-09-15",
+  "2018-10-15",
   "2018-11-15",
-  "2018-12-20"
+  "2018-12-15",
+  "2019-01-15",
+  "2019-02-15",
+  "2019-03-15",
+  "2019-04-15",
+  "2019-05-15",
+  "2019-06-15",
+  "2019-07-15",
+  "2019-08-15",
+  "2019-09-15",
+  "2019-10-15",
+  "2019-11-15",
+  "2019-12-15"
 ];
 const today = new Date().toISOString().slice(0, 10);
 let loc = [];
@@ -16,35 +31,29 @@ loc[9] = "Offsite";
 let upcoming = arr.filter(dt => {
   return dt > today;
 });
-for (let i = 0; i < upcoming.length; i++) {
-  loc[i] = loc[i] === undefined ? "Meeting Room" : loc[i];
-}
 
-function createCalTable(d, l) {
-  var today = moment()
-    .format()
-    .slice(0, 10);
-  var cnt = 0;
-  var tbl = document.getElementById("eventTable");
-  d.forEach(function(val, key) {
-    if (val > today) {
-      if (cnt === 0) {
-        document.getElementById("noEv").style.display = "none";
-      }
-      cnt++;
-      var row = tbl.insertRow(key + 1);
-      var d1 = row.insertCell(0);
-      d1.align = "center";
-      var d2 = row.insertCell(1);
-      d1.innerHTML =
-        l[key] != "No Meeting"
-          ? moment(val).format("ddd, MMM Do, YYYY")
-          : "<em>" + moment(val).format("MMMM, YYYY") + "</em>";
-      d2.innerHTML = l[key];
+function createCalTable() {
+  let row, d1, d2;
+  const tbl = document.getElementById("eventTable");
+  for (let [key, val] of upcoming.entries()) {
+    if (key > 11) {
+      break;
     }
-  });
-  var minHt = 140 + cnt * 32 + "px";
-  document.getElementById("sched").style.minHeight = minHt;
+    loc[key] = loc[key] === undefined ? "Meeting Room" : loc[key];
+    row = tbl.insertRow(key + 1);
+    d1 = row.insertCell(0);
+    d2 = row.insertCell(1);
+    d1.align = "center";
+    d1.innerHTML =
+      loc[key] != "No Meeting"
+        ? moment(val).format("ddd, MMM Do, YYYY")
+        : "<em>" + moment(val).format("MMMM, YYYY") + "</em>";
+    d2.innerHTML = loc[key];
+    var minHt = 140 * 32 + "px";
+    document.getElementById("sched").style.minHeight = minHt;
+  }
 }
-
-createCalTable(upcoming, loc);
+if (upcoming.length > 0) {
+  document.getElementById("noEv").style.display = "none";
+  createCalTable();
+}
